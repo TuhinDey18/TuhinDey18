@@ -76,7 +76,7 @@ const tuhin = {
 | **[GPS Tracking System](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** | Real-time GPS tracking with remote location monitoring via SMS | ESP32, Neo-6M GPS, SIM800L |
 | **[AI Diet Planner Telegram Bot](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** | Telegram bot generating personalized diet plans via REST APIs | Python, REST APIs, Telegram Bot API |
 
-*(Swap in the real repo links once each project has its own repo.)*
+
 
 ---
 
@@ -84,11 +84,11 @@ const tuhin = {
 
 | Certificate | Issued By | Link |
 |---|---|---|
-| REPLACE_WITH_CERT_1_TITLE | Coursera | `add link` |
-| REPLACE_WITH_CERT_2_TITLE | Coursera | `add link` |
-| REPLACE_WITH_CERT_3_TITLE | Coursera | `add link` |
+| CYBERSECURITY FUNDAMENTALS | UNIVERSITY OF LONDON | `https://www.coursera.org/account/accomplishments/verify/8QHQ8VXCB2ZB` |
+| INFORMATION THEORY | THE CHINESE UNIVERSITY OF HONG KONG | `https://www.coursera.org/account/accomplishments/verify/IN3O6JRFG89N` |
+| ADVANCED SYSTEM SECURITY TOPICS | UNIVERSITY OF COLORADO | `https://www.coursera.org/account/accomplishments/verify/X9XOZT85HXIU` |
 
-*(Send me the actual titles + certificate URLs and I'll drop them in properly — Coursera gives you a shareable verification link for each one, under "My Certificates".)*
+
 
 ---
 
