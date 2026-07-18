@@ -1,81 +1,1654 @@
-<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="duskSky" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#2b2359"/>
-      <stop offset="45%" stop-color="#5b3d78"/>
-      <stop offset="75%" stop-color="#a85c8a"/>
-      <stop offset="100%" stop-color="#f4b6c2"/>
-    </linearGradient>
-    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0%" stop-color="#fff8e0" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#fff8e0" stop-opacity="0"/>
-    </radialGradient>
-    <linearGradient id="lantern" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ff8a5b"/>
-      <stop offset="100%" stop-color="#ff5b5b"/>
-    </linearGradient>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg"
+viewBox="0 0 1200 700"
+width="1200"
+height="700">
 
-  <rect width="1200" height="320" fill="url(#duskSky)"/>
+<defs>
 
-  <!-- twinkling stars -->
-  <g fill="#fff8e0">
-    <circle cx="80" cy="40" r="1.8"><animate attributeName="opacity" values="1;0.2;1" dur="2.4s" repeatCount="indefinite"/></circle>
-    <circle cx="200" cy="70" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="330" cy="35" r="1.6"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="470" cy="60" r="1.8"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/></circle>
-    <circle cx="900" cy="45" r="1.6"><animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/></circle>
-    <circle cx="1000" cy="80" r="1.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" repeatCount="indefinite"/></circle>
-    <circle cx="1120" cy="50" r="1.8"><animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="650" cy="30" r="1.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.9s" repeatCount="indefinite"/></circle>
-    <circle cx="770" cy="65" r="1.6"><animate attributeName="opacity" values="1;0.3;1" dur="3.1s" repeatCount="indefinite"/></circle>
+<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#081326"/>
+<stop offset="25%" stop-color="#1d2951"/>
+<stop offset="60%" stop-color="#533b78"/>
+<stop offset="100%" stop-color="#f3a4be"/>
+</linearGradient>
+
+<linearGradient id="mountain1" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#2e2f59"/>
+<stop offset="100%" stop-color="#17162e"/>
+</linearGradient>
+
+<linearGradient id="mountain2" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#44366e"/>
+<stop offset="100%" stop-color="#251f46"/>
+</linearGradient>
+
+<radialGradient id="moonGlow">
+<stop offset="0%" stop-color="#fffdf5" stop-opacity="1"/>
+<stop offset="60%" stop-color="#fff8dc" stop-opacity=".35"/>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+</radialGradient>
+
+<filter id="blurGlow">
+<feGaussianBlur stdDeviation="10"/>
+</filter>
+
+</defs>
+
+<rect width="1200" height="700" fill="url(#sky)"/>
+
+<!-- Moon Glow -->
+
+<circle
+cx="980"
+cy="110"
+r="95"
+fill="url(#moonGlow)"
+filter="url(#blurGlow)">
+<animate
+attributeName="opacity"
+values=".75;1;.75"
+dur="6s"
+repeatCount="indefinite"/>
+</circle>
+
+<!-- Moon -->
+
+<circle
+cx="980"
+cy="110"
+r="42"
+fill="#fffbe9"/>
+
+<circle
+cx="995"
+cy="98"
+r="37"
+fill="#1d2951"/>
+
+<!-- Stars -->
+
+<g fill="white">
+
+<circle cx="50" cy="70" r="2">
+<animate attributeName="opacity"
+values="1;.3;1"
+dur="2s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="130" cy="40" r="1.5">
+<animate attributeName="opacity"
+values=".2;1;.2"
+dur="3.5s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="220" cy="80" r="2"/>
+
+<circle cx="310" cy="55" r="1.5"/>
+
+<circle cx="420" cy="35" r="2"/>
+
+<circle cx="520" cy="65" r="2"/>
+
+<circle cx="610" cy="40" r="2"/>
+
+<circle cx="710" cy="85" r="1.5"/>
+
+<circle cx="840" cy="60" r="2"/>
+
+<circle cx="1090" cy="55" r="2"/>
+
+<circle cx="1140" cy="120" r="1.8"/>
+
+<circle cx="890" cy="160" r="1.5"/>
+
+<circle cx="430" cy="130" r="1.5"/>
+
+<circle cx="250" cy="160" r="2"/>
+
+<circle cx="120" cy="180" r="1.5"/>
+
+</g>
+
+<!-- Shooting Star -->
+
+<g>
+
+<line
+x1="-100"
+y1="-100"
+x2="-20"
+y2="-20"
+stroke="white"
+stroke-width="2">
+
+<animate attributeName="x1"
+values="-100;900"
+dur="12s"
+repeatCount="indefinite"/>
+
+<animate attributeName="y1"
+values="-100;220"
+dur="12s"
+repeatCount="indefinite"/>
+
+<animate attributeName="x2"
+values="-20;980"
+dur="12s"
+repeatCount="indefinite"/>
+
+<animate attributeName="y2"
+values="-20;300"
+dur="12s"
+repeatCount="indefinite"/>
+
+</line>
+
+</g>
+
+<!-- Clouds -->
+
+<g opacity=".35">
+
+<ellipse cx="180" cy="140" rx="60" ry="18" fill="#ffffff">
+<animateTransform
+attributeName="transform"
+type="translate"
+values="-80 0;80 0;-80 0"
+dur="60s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="520" cy="190" rx="95" ry="24" fill="#ffffff">
+<animateTransform
+attributeName="transform"
+type="translate"
+values="-60 0;60 0;-60 0"
+dur="80s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="900" cy="170" rx="75" ry="18" fill="#ffffff">
+<animateTransform
+attributeName="transform"
+type="translate"
+values="60 0;-60 0;60 0"
+dur="70s"
+repeatCount="indefinite"/>
+</ellipse>
+
+</g>
+
+<!-- Far Mountains -->
+
+<path
+d="M0 430
+L130 300
+L240 390
+L360 260
+L500 410
+L620 280
+L760 390
+L900 250
+L1060 420
+L1200 310
+L1200 700
+L0 700Z"
+fill="url(#mountain1)"
+opacity=".7"/>
+
+<!-- Near Mountains -->
+
+<path
+d="M0 500
+L150 360
+L320 470
+L470 330
+L620 490
+L770 350
+L960 520
+L1120 370
+L1200 430
+L1200 700
+L0 700Z"
+fill="url(#mountain2)"/>
+
+<!-- Ground -->
+
+<rect
+x="0"
+y="520"
+width="1200"
+height="180"
+fill="#1a1628"/>
+<!-- ========================= -->
+<!-- PART 2 : SHRINE & TORII   -->
+<!-- ========================= -->
+
+<defs>
+
+<linearGradient id="roofGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#7b2c36"/>
+    <stop offset="100%" stop-color="#40161d"/>
+</linearGradient>
+
+<linearGradient id="woodGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#8b6a4d"/>
+    <stop offset="100%" stop-color="#5f4634"/>
+</linearGradient>
+
+<radialGradient id="lanternGlow">
+    <stop offset="0%" stop-color="#ffe8a6" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#ffcf5c" stop-opacity="0"/>
+</radialGradient>
+
+</defs>
+
+<!-- Stone Path -->
+
+<path
+d="
+M520 700
+L560 610
+L590 520
+L610 460
+L640 420
+L670 400
+L720 390
+L760 390
+L800 700Z"
+fill="#8d8d95"
+opacity=".92"/>
+
+<!-- Stone Tiles -->
+
+<g stroke="#6b6b72" stroke-width="1">
+
+<line x1="560" y1="610" x2="775" y2="610"/>
+
+<line x1="575" y1="565" x2="760" y2="565"/>
+
+<line x1="592" y1="525" x2="746" y2="525"/>
+
+<line x1="610" y1="488" x2="732" y2="488"/>
+
+<line x1="630" y1="452" x2="718" y2="452"/>
+
+</g>
+
+<!-- Wooden Bridge -->
+
+<g>
+
+<rect
+x="250"
+y="520"
+width="220"
+height="18"
+fill="#6b4630"/>
+
+<line x1="250" y1="520" x2="250" y2="490"
+stroke="#6b4630"
+stroke-width="5"/>
+
+<line x1="470" y1="520" x2="470" y2="490"
+stroke="#6b4630"
+stroke-width="5"/>
+
+<path
+d="M250 490
+Q360 450
+470 490"
+stroke="#6b4630"
+stroke-width="5"
+fill="none"/>
+
+</g>
+
+<!-- Main Shrine -->
+
+<g id="shrine">
+
+<!-- Building -->
+
+<rect
+x="510"
+y="250"
+width="180"
+height="160"
+rx="4"
+fill="url(#woodGrad)"/>
+
+<!-- Roof -->
+
+<polygon
+points="
+480,270
+720,270
+675,200
+525,200"
+fill="url(#roofGrad)"/>
+
+<!-- Roof Cap -->
+
+<rect
+x="470"
+y="190"
+width="260"
+height="14"
+rx="2"
+fill="#2d1b1f"/>
+
+<!-- Roof Ends -->
+
+<path
+d="
+M470 197
+Q450 178 438 188"
+stroke="#2d1b1f"
+stroke-width="6"
+fill="none"/>
+
+<path
+d="
+M730 197
+Q750 178 762 188"
+stroke="#2d1b1f"
+stroke-width="6"
+fill="none"/>
+
+<!-- Pillars -->
+
+<rect x="530" y="250" width="12" height="160" fill="#463224"/>
+<rect x="658" y="250" width="12" height="160" fill="#463224"/>
+
+<!-- Entrance -->
+
+<rect
+x="565"
+y="305"
+width="70"
+height="105"
+fill="#2d1f1b"/>
+
+<!-- Paper Door -->
+
+<line x1="600" y1="305" x2="600" y2="410"
+stroke="#eee7d8"
+stroke-width="2"/>
+
+<line x1="565" y1="340" x2="635" y2="340"
+stroke="#eee7d8"
+stroke-width="2"/>
+
+<line x1="565" y1="375" x2="635" y2="375"
+stroke="#eee7d8"
+stroke-width="2"/>
+
+<!-- Shrine Rope -->
+
+<path
+d="M540 285
+Q600 300
+660 285"
+stroke="#d5b56b"
+stroke-width="5"
+fill="none"/>
+
+</g>
+
+<!-- Torii Gate -->
+
+<g>
+
+<rect
+x="830"
+y="260"
+width="230"
+height="12"
+fill="#722131"/>
+
+<rect
+x="845"
+y="282"
+width="200"
+height="8"
+fill="#5d1828"/>
+
+<rect
+x="875"
+y="270"
+width="12"
+height="180"
+fill="#722131"/>
+
+<rect
+x="1018"
+y="270"
+width="12"
+height="180"
+fill="#722131"/>
+
+<rect
+x="945"
+y="290"
+width="10"
+height="60"
+fill="#722131"/>
+
+</g>
+
+<!-- Lantern Left -->
+
+<g>
+
+<line
+x1="490"
+y1="270"
+x2="490"
+y2="310"
+stroke="#222"
+stroke-width="2"/>
+
+<circle
+cx="490"
+cy="330"
+r="34"
+fill="url(#lanternGlow)"
+opacity=".35">
+
+<animate
+attributeName="opacity"
+values=".25;.5;.25"
+dur="3s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<ellipse
+cx="490"
+cy="330"
+rx="15"
+ry="24"
+fill="#f29b4c">
+
+<animate
+attributeName="fill"
+values="#f29b4c;#ffd07c;#f29b4c"
+dur="2.5s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+</g>
+
+<!-- Lantern Right -->
+
+<g>
+
+<line
+x1="710"
+y1="270"
+x2="710"
+y2="310"
+stroke="#222"
+stroke-width="2"/>
+
+<circle
+cx="710"
+cy="330"
+r="34"
+fill="url(#lanternGlow)"
+opacity=".35">
+
+<animate
+attributeName="opacity"
+values=".5;.2;.5"
+dur="3.2s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<ellipse
+cx="710"
+cy="330"
+rx="15"
+ry="24"
+fill="#f29b4c">
+
+<animate
+attributeName="fill"
+values="#ffd07c;#f29b4c;#ffd07c"
+dur="2.4s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+</g>
+
+<!-- Stone Steps -->
+
+<g fill="#a8a8b3">
+
+<rect x="555" y="410" width="90" height="10"/>
+
+<rect x="548" y="420" width="104" height="10"/>
+
+<rect x="540" y="430" width="120" height="10"/>
+
+<rect x="532" y="440" width="136" height="10"/>
+
+</g>
+
+<!-- Grass -->
+
+<g stroke="#2f7a46" stroke-width="2">
+
+<path d="M0 520 L10 505 L18 520"/>
+
+<path d="M40 520 L48 503 L56 520"/>
+
+<path d="M95 520 L105 500 L112 520"/>
+
+<path d="M1080 520 L1092 503 L1100 520"/>
+
+<path d="M1150 520 L1160 500 L1170 520"/>
+
+<path d="M1185 520 L1192 505 L1200 520"/>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 3A-1 : LEFT CHERRY TREE (TRUNK)   -->
+<!-- ====================================== -->
+
+<defs>
+
+<linearGradient id="trunkGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+<stop offset="0%" stop-color="#6d4b39"/>
+<stop offset="100%" stop-color="#2d1b14"/>
+</linearGradient>
+
+</defs>
+
+<!-- Left Sakura Tree -->
+
+<g id="leftTree">
+
+<!-- Main Trunk -->
+
+<path
+d="
+M145 700
+C145 650 150 620 160 590
+C172 548 190 515 210 470
+C228 432 242 405 250 355
+C255 325 254 290 250 250
+"
+stroke="url(#trunkGrad)"
+stroke-width="26"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Large Branch -->
+
+<path
+d="
+M228 420
+C180 395 150 365 120 320
+C95 285 80 250 72 210
+"
+stroke="url(#trunkGrad)"
+stroke-width="14"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Large Branch -->
+
+<path
+d="
+M236 392
+C285 360 320 330 355 285
+C380 250 390 220 400 180
+"
+stroke="url(#trunkGrad)"
+stroke-width="13"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Upper Branch -->
+
+<path
+d="
+M246 338
+C205 310 180 275 160 240
+"
+stroke="url(#trunkGrad)"
+stroke-width="10"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Upper Branch -->
+
+<path
+d="
+M248 330
+C292 305 335 280 365 240
+"
+stroke="url(#trunkGrad)"
+stroke-width="10"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Secondary Branch -->
+
+<path
+d="
+M205 475
+C175 455 155 430 140 395
+"
+stroke="url(#trunkGrad)"
+stroke-width="8"
+stroke-linecap="round"
+fill="none"/>
+
+<path
+d="
+M218 455
+C250 430 280 410 305 382
+"
+stroke="url(#trunkGrad)"
+stroke-width="8"
+stroke-linecap="round"
+fill="none"/>
+
+<path
+d="
+M170 560
+C140 540 120 515 105 490
+"
+stroke="url(#trunkGrad)"
+stroke-width="7"
+stroke-linecap="round"
+fill="none"/>
+
+<path
+d="
+M185 535
+C225 515 255 500 282 470
+"
+stroke="url(#trunkGrad)"
+stroke-width="7"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Twigs -->
+
+<g stroke="#4a2b21"
+stroke-width="4"
+stroke-linecap="round"
+fill="none">
+
+<path d="M118 320 C105 300 92 285 80 268"/>
+<path d="M150 350 C132 332 120 320 108 300"/>
+<path d="M180 278 C168 258 158 245 148 228"/>
+<path d="M320 325 C340 308 352 292 364 270"/>
+<path d="M305 390 C332 370 350 355 365 335"/>
+<path d="M285 470 C315 448 330 432 345 410"/>
+<path d="M390 190 C405 170 415 152 420 135"/>
+<path d="M72 210 C55 188 42 170 34 150"/>
+
+</g>
+
+<!-- Bark Texture -->
+
+<g stroke="#7a5a49"
+stroke-width="2"
+opacity=".35">
+
+<line x1="183" y1="650" x2="172" y2="630"/>
+<line x1="193" y1="610" x2="180" y2="592"/>
+<line x1="208" y1="570" x2="196" y2="552"/>
+<line x1="220" y1="530" x2="206" y2="512"/>
+<line x1="228" y1="495" x2="214" y2="478"/>
+<line x1="238" y1="458" x2="224" y2="442"/>
+<line x1="246" y1="420" x2="232" y2="404"/>
+<line x1="252" y1="382" x2="238" y2="365"/>
+<line x1="254" y1="340" x2="244" y2="322"/>
+<line x1="254" y1="300" x2="246" y2="282"/>
+
+</g>
+
+<!-- Gentle Tree Sway -->
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+values="-0.8 200 700;0.8 200 700;-0.8 200 700"
+dur="9s"
+repeatCount="indefinite"/>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 3A-2 : LEFT SAKURA CANOPY LAYER 1 -->
+<!-- ====================================== -->
+
+<defs>
+
+<radialGradient id="blossomPink">
+    <stop offset="0%" stop-color="#ffeff7"/>
+    <stop offset="55%" stop-color="#ffd3e7"/>
+    <stop offset="100%" stop-color="#f6a8c6"/>
+</radialGradient>
+
+<filter id="softBloom">
+    <feGaussianBlur stdDeviation="1.4"/>
+</filter>
+
+</defs>
+
+<g id="leftCanopy1">
+
+<!-- Main Blossom Clouds -->
+
+<g fill="url(#blossomPink)">
+
+<ellipse cx="120" cy="220" rx="70" ry="58">
+<animate attributeName="opacity"
+values=".95;1;.95"
+dur="5s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="190" cy="180" rx="82" ry="62">
+<animate attributeName="opacity"
+values="1;.92;1"
+dur="4.8s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="285" cy="185" rx="74" ry="60">
+<animate attributeName="opacity"
+values=".95;1;.95"
+dur="5.2s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="340" cy="245" rx="70" ry="55"/>
+
+<ellipse cx="230" cy="260" rx="88" ry="65"/>
+
+<ellipse cx="150" cy="300" rx="72" ry="58"/>
+
+<ellipse cx="285" cy="310" rx="74" ry="58"/>
+
+</g>
+
+<!-- Soft Highlight -->
+
+<g
+fill="#fff7fb"
+opacity=".35"
+filter="url(#softBloom)">
+
+<circle cx="165" cy="170" r="18"/>
+<circle cx="245" cy="155" r="22"/>
+<circle cx="315" cy="215" r="16"/>
+<circle cx="150" cy="270" r="20"/>
+<circle cx="270" cy="295" r="18"/>
+
+</g>
+
+<!-- Blossom Clusters -->
+
+<g fill="#ffd5e7">
+
+<circle cx="120" cy="220" r="8"/>
+<circle cx="140" cy="205" r="7"/>
+<circle cx="160" cy="230" r="6"/>
+<circle cx="182" cy="192" r="8"/>
+<circle cx="205" cy="175" r="6"/>
+<circle cx="225" cy="198" r="7"/>
+<circle cx="245" cy="170" r="9"/>
+<circle cx="270" cy="190" r="7"/>
+<circle cx="292" cy="180" r="8"/>
+<circle cx="315" cy="205" r="6"/>
+<circle cx="340" cy="240" r="8"/>
+<circle cx="315" cy="270" r="7"/>
+<circle cx="285" cy="305" r="8"/>
+<circle cx="245" cy="320" r="7"/>
+<circle cx="205" cy="300" r="8"/>
+<circle cx="170" cy="285" r="7"/>
+<circle cx="135" cy="260" r="8"/>
+<circle cx="105" cy="245" r="6"/>
+
+</g>
+
+<!-- Tiny Flowers -->
+
+<g fill="#ffeef6">
+
+<circle cx="105" cy="190" r="3"/>
+<circle cx="130" cy="170" r="2.8"/>
+<circle cx="170" cy="155" r="3"/>
+<circle cx="205" cy="145" r="2.5"/>
+<circle cx="240" cy="145" r="3"/>
+<circle cx="275" cy="155" r="2.8"/>
+<circle cx="315" cy="170" r="3"/>
+<circle cx="350" cy="205" r="2.5"/>
+<circle cx="360" cy="245" r="3"/>
+<circle cx="340" cy="285" r="3"/>
+<circle cx="300" cy="325" r="2.5"/>
+<circle cx="245" cy="340" r="3"/>
+<circle cx="180" cy="335" r="3"/>
+<circle cx="130" cy="315" r="2.5"/>
+<circle cx="90" cy="270" r="3"/>
+
+</g>
+
+<!-- Gentle Wind Motion -->
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;2 -1;0 0;-2 1;0 0"
+dur="8s"
+repeatCount="indefinite"/>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 3A-3 : BLOSSOMS & FALLING PETALS  -->
+<!-- ====================================== -->
+
+<g id="leftCanopyDetail">
+
+  <!-- Dense Blossom Layer -->
+  <g fill="#ffd9ea">
+
+    <circle cx="95" cy="205" r="5"/>
+    <circle cx="108" cy="190" r="4"/>
+    <circle cx="122" cy="214" r="5"/>
+    <circle cx="140" cy="186" r="4"/>
+    <circle cx="158" cy="198" r="5"/>
+    <circle cx="176" cy="182" r="4"/>
+    <circle cx="194" cy="206" r="5"/>
+    <circle cx="212" cy="188" r="4"/>
+    <circle cx="228" cy="212" r="5"/>
+    <circle cx="246" cy="194" r="4"/>
+    <circle cx="262" cy="176" r="5"/>
+    <circle cx="280" cy="196" r="4"/>
+    <circle cx="298" cy="182" r="5"/>
+    <circle cx="316" cy="205" r="4"/>
+    <circle cx="332" cy="228" r="5"/>
+    <circle cx="315" cy="252" r="4"/>
+    <circle cx="292" cy="278" r="5"/>
+    <circle cx="265" cy="298" r="4"/>
+    <circle cx="230" cy="308" r="5"/>
+    <circle cx="198" cy="298" r="4"/>
+    <circle cx="168" cy="282" r="5"/>
+    <circle cx="138" cy="262" r="4"/>
+    <circle cx="114" cy="240" r="5"/>
+
   </g>
 
-  <!-- moon -->
-  <circle cx="1020" cy="60" r="55" fill="url(#moonGlow)"/>
-  <circle cx="1020" cy="60" r="26" fill="#fff8e0"/>
-  <circle cx="1032" cy="52" r="24" fill="#5b3d78"/>
+  <!-- White Highlights -->
 
-  <!-- torii gate silhouette -->
-  <g fill="#2a1520">
-    <rect x="150" y="130" width="900" height="16" rx="3"/>
-    <rect x="150" y="158" width="900" height="9" rx="2"/>
-    <rect x="230" y="140" width="22" height="160"/>
-    <rect x="748" y="140" width="22" height="160"/>
-    <rect x="470" y="167" width="16" height="60"/>
+  <g fill="#fffdfd" opacity=".55">
+
+    <circle cx="128" cy="176" r="2"/>
+    <circle cx="175" cy="166" r="2"/>
+    <circle cx="220" cy="170" r="2"/>
+    <circle cx="266" cy="162" r="2"/>
+    <circle cx="305" cy="182" r="2"/>
+    <circle cx="336" cy="228" r="2"/>
+    <circle cx="308" cy="286" r="2"/>
+    <circle cx="244" cy="325" r="2"/>
+    <circle cx="170" cy="320" r="2"/>
+    <circle cx="112" cy="266" r="2"/>
+
   </g>
 
-  <!-- lanterns hanging under the beam -->
-  <g>
-    <line x1="330" y1="167" x2="330" y2="190" stroke="#2a1520" stroke-width="2"/>
-    <ellipse cx="330" cy="210" rx="20" ry="24" fill="url(#lantern)">
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2s" repeatCount="indefinite"/>
+  <!-- Animated Petals -->
+
+  <g fill="#ffd2e5">
+
+    <ellipse rx="4" ry="2.8">
+      <animateMotion
+        dur="8s"
+        repeatCount="indefinite"
+        path="M180 180 C220 240 150 330 230 520"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="3s"
+        repeatCount="indefinite"/>
     </ellipse>
-    <rect x="322" y="188" width="16" height="6" fill="#4a2a20"/>
 
-    <line x1="600" y1="167" x2="600" y2="192" stroke="#2a1520" stroke-width="2"/>
-    <ellipse cx="600" cy="214" rx="22" ry="26" fill="url(#lantern)">
-      <animate attributeName="opacity" values="1;0.8;1" dur="2.4s" repeatCount="indefinite"/>
+    <ellipse rx="4" ry="3">
+      <animateMotion
+        dur="9s"
+        repeatCount="indefinite"
+        path="M250 170 C290 250 210 340 300 560"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="360"
+        to="0"
+        dur="4s"
+        repeatCount="indefinite"/>
     </ellipse>
-    <rect x="591" y="190" width="18" height="6" fill="#4a2a20"/>
 
-    <line x1="870" y1="167" x2="870" y2="190" stroke="#2a1520" stroke-width="2"/>
-    <ellipse cx="870" cy="210" rx="20" ry="24" fill="url(#lantern)">
-      <animate attributeName="opacity" values="0.85;1;0.85" dur="2.2s" repeatCount="indefinite"/>
+    <ellipse rx="3.5" ry="2.6">
+      <animateMotion
+        dur="7s"
+        repeatCount="indefinite"
+        path="M120 200 C170 260 100 360 190 560"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="-360"
+        dur="2.8s"
+        repeatCount="indefinite"/>
     </ellipse>
-    <rect x="862" y="188" width="16" height="6" fill="#4a2a20"/>
+
+    <ellipse rx="3.5" ry="2.5">
+      <animateMotion
+        dur="10s"
+        repeatCount="indefinite"
+        path="M320 210 C370 290 260 390 350 610"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="-360"
+        to="0"
+        dur="5s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
+    <ellipse rx="4" ry="2.8">
+      <animateMotion
+        dur="8.5s"
+        repeatCount="indefinite"
+        path="M220 150 C260 230 180 320 250 600"/>
+      <animateTransform
+        attributeName="transform"
+        type="rotate"
+        from="0"
+        to="360"
+        dur="3.5s"
+        repeatCount="indefinite"/>
+    </ellipse>
+
   </g>
 
-  <!-- distant hills -->
-  <path d="M0,300 Q150,260 300,295 T600,290 T900,300 T1200,285 L1200,320 L0,320 Z" fill="#3a1f3d" opacity="0.85"/>
+  <!-- Tiny Floating Blossoms -->
 
-  <!-- falling sakura petals -->
-  <g fill="#ffc4d6">
-    <circle r="4"><animateMotion path="M100,0 C120,80 60,160 100,320" dur="6s" repeatCount="indefinite"/></circle>
-    <circle r="3"><animateMotion path="M300,0 C280,90 340,180 300,320" dur="7s" repeatCount="indefinite"/></circle>
-    <circle r="4"><animateMotion path="M550,0 C580,100 520,200 550,320" dur="5.5s" repeatCount="indefinite"/></circle>
-    <circle r="3"><animateMotion path="M800,0 C770,110 830,210 800,320" dur="6.5s" repeatCount="indefinite"/></circle>
-    <circle r="4"><animateMotion path="M1050,0 C1080,90 1020,190 1050,320" dur="7.5s" repeatCount="indefinite"/></circle>
-    <circle r="3"><animateMotion path="M950,0 C930,100 980,200 950,320" dur="6.8s" repeatCount="indefinite"/></circle>
+  <g fill="#ffeef7" opacity=".75">
+
+    <circle cx="118" cy="224" r="1.4">
+      <animate attributeName="cy" values="224;220;224" dur="3s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="192" cy="204" r="1.5">
+      <animate attributeName="cy" values="204;200;204" dur="4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="272" cy="216" r="1.3">
+      <animate attributeName="cy" values="216;212;216" dur="3.4s" repeatCount="indefinite"/>
+    </circle>
+
+    <circle cx="320" cy="250" r="1.4">
+      <animate attributeName="cy" values="250;246;250" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+
   </g>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 3B-1 : RIGHT SAKURA TREE TRUNK    -->
+<!-- ====================================== -->
+
+<g id="rightTree">
+
+<!-- Main Trunk -->
+
+<path
+d="
+M1040 700
+C1038 650 1032 620 1020 585
+C1005 545 985 505 962 458
+C945 420 932 388 928 340
+C925 305 930 270 938 230
+"
+stroke="url(#trunkGrad)"
+stroke-width="28"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Main Left Branch -->
+
+<path
+d="
+M975 430
+C935 400 900 365 870 320
+C845 285 830 250 820 205
+"
+stroke="url(#trunkGrad)"
+stroke-width="15"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Main Right Branch -->
+
+<path
+d="
+M982 405
+C1025 382 1065 350 1105 305
+C1135 272 1155 238 1168 195
+"
+stroke="url(#trunkGrad)"
+stroke-width="14"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Upper Branch -->
+
+<path
+d="
+M940 350
+C900 320 875 285 855 248
+"
+stroke="url(#trunkGrad)"
+stroke-width="10"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Upper Branch -->
+
+<path
+d="
+M950 338
+C995 315 1035 285 1068 245
+"
+stroke="url(#trunkGrad)"
+stroke-width="10"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Secondary Branches -->
+
+<path
+d="
+M1008 480
+C1040 455 1070 430 1095 395
+"
+stroke="url(#trunkGrad)"
+stroke-width="8"
+stroke-linecap="round"
+fill="none"/>
+
+<path
+d="
+M955 505
+C920 485 890 460 865 430
+"
+stroke="url(#trunkGrad)"
+stroke-width="8"
+stroke-linecap="round"
+fill="none"/>
+
+<path
+d="
+M1018 565
+C1052 545 1082 520 1110 492
+"
+stroke="url(#trunkGrad)"
+stroke-width="7"
+stroke-linecap="round"
+fill="none"/>
+
+<path
+d="
+M948 555
+C915 535 885 510 860 482
+"
+stroke="url(#trunkGrad)"
+stroke-width="7"
+stroke-linecap="round"
+fill="none"/>
+
+<!-- Fine Twigs -->
+
+<g
+stroke="#4a2b21"
+stroke-width="4"
+stroke-linecap="round"
+fill="none">
+
+<path d="M820 205 C805 182 792 165 782 145"/>
+<path d="M848 250 C830 228 818 210 806 194"/>
+<path d="M875 315 C858 298 846 280 834 264"/>
+<path d="M1068 245 C1086 224 1102 205 1118 184"/>
+<path d="M1105 305 C1124 286 1140 268 1158 246"/>
+<path d="M1095 395 C1116 376 1135 360 1155 340"/>
+<path d="M860 482 C840 465 824 450 810 430"/>
+<path d="M1110 492 C1132 472 1150 456 1168 435"/>
+
+</g>
+
+<!-- Bark Texture -->
+
+<g
+stroke="#7a5a49"
+stroke-width="2"
+opacity=".35">
+
+<line x1="1012" y1="648" x2="1024" y2="630"/>
+<line x1="998" y1="610" x2="1012" y2="592"/>
+<line x1="985" y1="570" x2="999" y2="552"/>
+<line x1="972" y1="532" x2="986" y2="514"/>
+<line x1="960" y1="492" x2="974" y2="474"/>
+<line x1="950" y1="452" x2="964" y2="434"/>
+<line x1="942" y1="414" x2="956" y2="396"/>
+<line x1="936" y1="374" x2="948" y2="356"/>
+<line x1="934" y1="332" x2="944" y2="314"/>
+<line x1="936" y1="290" x2="946" y2="272"/>
+
+</g>
+
+<!-- Tree Sway -->
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+values="0.8 1040 700;-0.8 1040 700;0.8 1040 700"
+dur="9s"
+repeatCount="indefinite"/>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 3B-2 : RIGHT SAKURA CANOPY        -->
+<!-- ====================================== -->
+
+<g id="rightCanopy">
+
+<!-- Blossom Clouds -->
+
+<g fill="url(#blossomPink)">
+
+<ellipse cx="1085" cy="220" rx="72" ry="58">
+<animate attributeName="opacity"
+values=".95;1;.95"
+dur="5.1s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="1005" cy="180" rx="82" ry="62">
+<animate attributeName="opacity"
+values="1;.92;1"
+dur="4.7s"
+repeatCount="indefinite"/>
+</ellipse>
+
+<ellipse cx="920" cy="185" rx="74" ry="60"/>
+<ellipse cx="865" cy="245" rx="72" ry="56"/>
+<ellipse cx="975" cy="262" rx="90" ry="66"/>
+<ellipse cx="1100" cy="300" rx="70" ry="58"/>
+<ellipse cx="925" cy="310" rx="76" ry="60"/>
+
+</g>
+
+<!-- Bloom Highlights -->
+
+<g
+fill="#fff8fb"
+opacity=".36"
+filter="url(#softBloom)">
+
+<circle cx="1040" cy="165" r="18"/>
+<circle cx="950" cy="155" r="22"/>
+<circle cx="880" cy="214" r="16"/>
+<circle cx="1088" cy="280" r="18"/>
+<circle cx="960" cy="305" r="18"/>
+
+</g>
+
+<!-- Blossom Clusters -->
+
+<g fill="#ffd5e7">
+
+<circle cx="1100" cy="220" r="8"/>
+<circle cx="1080" cy="205" r="7"/>
+<circle cx="1060" cy="230" r="6"/>
+<circle cx="1038" cy="192" r="8"/>
+<circle cx="1015" cy="176" r="6"/>
+<circle cx="995" cy="198" r="7"/>
+<circle cx="972" cy="170" r="9"/>
+<circle cx="948" cy="188" r="7"/>
+<circle cx="924" cy="182" r="8"/>
+<circle cx="900" cy="205" r="6"/>
+<circle cx="875" cy="240" r="8"/>
+<circle cx="900" cy="272" r="7"/>
+<circle cx="930" cy="304" r="8"/>
+<circle cx="975" cy="320" r="7"/>
+<circle cx="1018" cy="300" r="8"/>
+<circle cx="1050" cy="286" r="7"/>
+<circle cx="1082" cy="260" r="8"/>
+<circle cx="1110" cy="242" r="6"/>
+
+</g>
+
+<!-- Small Flowers -->
+
+<g fill="#ffeef6">
+
+<circle cx="1115" cy="192" r="3"/>
+<circle cx="1092" cy="170" r="2.8"/>
+<circle cx="1055" cy="156" r="3"/>
+<circle cx="1015" cy="146" r="2.5"/>
+<circle cx="975" cy="145" r="3"/>
+<circle cx="938" cy="155" r="2.8"/>
+<circle cx="900" cy="170" r="3"/>
+<circle cx="862" cy="205" r="2.5"/>
+<circle cx="852" cy="245" r="3"/>
+<circle cx="872" cy="286" r="3"/>
+<circle cx="915" cy="326" r="2.5"/>
+<circle cx="975" cy="340" r="3"/>
+<circle cx="1040" cy="336" r="3"/>
+<circle cx="1090" cy="315" r="2.5"/>
+<circle cx="1128" cy="268" r="3"/>
+
+</g>
+
+<!-- Floating Blossom Details -->
+
+<g fill="#ffd9ea">
+
+<circle cx="1095" cy="205" r="5"/>
+<circle cx="1078" cy="188" r="4"/>
+<circle cx="1056" cy="210" r="5"/>
+<circle cx="1030" cy="180" r="4"/>
+<circle cx="1002" cy="198" r="5"/>
+<circle cx="972" cy="176" r="4"/>
+<circle cx="942" cy="194" r="5"/>
+<circle cx="915" cy="180" r="4"/>
+<circle cx="888" cy="204" r="5"/>
+<circle cx="870" cy="226" r="4"/>
+<circle cx="890" cy="258" r="5"/>
+<circle cx="918" cy="286" r="4"/>
+<circle cx="958" cy="308" r="5"/>
+<circle cx="1005" cy="316" r="4"/>
+<circle cx="1052" cy="304" r="5"/>
+<circle cx="1088" cy="280" r="4"/>
+
+</g>
+
+<!-- Whole Canopy Sway -->
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="0 0;-2 -1;0 0;2 1;0 0"
+dur="8.5s"
+repeatCount="indefinite"/>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 4-1 : PETALS • FIREFLIES • MIST   -->
+<!-- ====================================== -->
+
+<!-- ========= Ground Mist ========= -->
+
+<defs>
+
+<linearGradient id="mistFade"
+x1="0%" y1="0%"
+x2="0%" y2="100%">
+
+<stop offset="0%" stop-color="#ffffff" stop-opacity=".18"/>
+<stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+
+</linearGradient>
+
+</defs>
+
+<g id="mist" opacity=".45">
+
+<ellipse
+cx="600"
+cy="645"
+rx="560"
+ry="70"
+fill="url(#mistFade)">
+
+<animate
+attributeName="rx"
+values="560;575;560"
+dur="12s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse
+cx="450"
+cy="625"
+rx="220"
+ry="38"
+fill="url(#mistFade)">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="-10 0;10 0;-10 0"
+dur="16s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse
+cx="760"
+cy="618"
+rx="240"
+ry="40"
+fill="url(#mistFade)">
+
+<animateTransform
+attributeName="transform"
+type="translate"
+values="10 0;-10 0;10 0"
+dur="15s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+</g>
+
+<!-- ========= Fireflies ========= -->
+
+<g id="fireflies">
+
+<g fill="#fff6a5">
+
+<circle cx="260" cy="470" r="2.3">
+<animate attributeName="opacity"
+values=".2;1;.2"
+dur="2.5s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="360" cy="420" r="2">
+<animate attributeName="opacity"
+values="1;.2;1"
+dur="3s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="520" cy="390" r="2.2">
+<animate attributeName="opacity"
+values=".3;1;.3"
+dur="2.8s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="675" cy="405" r="2.3">
+<animate attributeName="opacity"
+values=".2;1;.2"
+dur="3.2s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="820" cy="430" r="2.1">
+<animate attributeName="opacity"
+values="1;.3;1"
+dur="2.6s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="955" cy="455" r="2.4">
+<animate attributeName="opacity"
+values=".3;1;.3"
+dur="3.1s"
+repeatCount="indefinite"/>
+</circle>
+
+</g>
+
+</g>
+
+<!-- ========= Falling Petals ========= -->
+
+<g
+fill="#ffd7ea"
+opacity=".88">
+
+<ellipse rx="4" ry="2.8">
+
+<animateMotion
+dur="12s"
+repeatCount="indefinite"
+path="
+M80 140
+C180 250 120 420 220 700"/>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0"
+to="360"
+dur="4s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse rx="4" ry="3">
+
+<animateMotion
+dur="13s"
+repeatCount="indefinite"
+path="
+M260 120
+C330 250 250 430 360 700"/>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="360"
+to="0"
+dur="5s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse rx="4" ry="2.7">
+
+<animateMotion
+dur="11s"
+repeatCount="indefinite"
+path="
+M470 90
+C540 220 450 420 590 700"/>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0"
+to="-360"
+dur="3.6s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse rx="4" ry="2.8">
+
+<animateMotion
+dur="12.5s"
+repeatCount="indefinite"
+path="
+M720 120
+C800 250 710 430 840 700"/>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="-360"
+to="0"
+dur="4.2s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse rx="4" ry="3">
+
+<animateMotion
+dur="14s"
+repeatCount="indefinite"
+path="
+M1020 150
+C1120 260 1020 430 1135 700"/>
+
+<animateTransform
+attributeName="transform"
+type="rotate"
+from="0"
+to="360"
+dur="5.4s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+</g>
+
+<!-- ========= Floating Dust ========= -->
+
+<g fill="#ffffff" opacity=".28">
+
+<circle cx="240" cy="520" r="1.2"/>
+<circle cx="320" cy="470" r="1.1"/>
+<circle cx="450" cy="505" r="1.4"/>
+<circle cx="590" cy="450" r="1.2"/>
+<circle cx="720" cy="520" r="1.3"/>
+<circle cx="860" cy="470" r="1.2"/>
+<circle cx="980" cy="510" r="1.3"/>
+
+</g>
+<!-- ====================================== -->
+<!-- PART 4-2 : FINAL POLISH & CLOSING      -->
+<!-- ====================================== -->
+
+<!-- ========= Moon Reflection ========= -->
+
+<g opacity=".16">
+
+<ellipse
+cx="600"
+cy="640"
+rx="170"
+ry="18"
+fill="#ffffff">
+
+<animate
+attributeName="opacity"
+values=".12;.22;.12"
+dur="6s"
+repeatCount="indefinite"/>
+
+</ellipse>
+
+<ellipse
+cx="600"
+cy="646"
+rx="120"
+ry="10"
+fill="#d8ecff"
+opacity=".45"/>
+
+</g>
+
+<!-- ========= Soft Scene Glow ========= -->
+
+<rect
+x="0"
+y="0"
+width="1200"
+height="700"
+fill="url(#moonGlow)"
+opacity=".04"/>
+
+<!-- ========= Extra Twinkling Stars ========= -->
+
+<g fill="#ffffff">
+
+<circle cx="82" cy="82" r="1.4">
+<animate attributeName="opacity"
+values=".2;1;.2"
+dur="2.6s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="215" cy="60" r="1.2">
+<animate attributeName="opacity"
+values="1;.2;1"
+dur="3.3s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="398" cy="102" r="1.5">
+<animate attributeName="opacity"
+values=".3;1;.3"
+dur="2.9s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="610" cy="72" r="1.3">
+<animate attributeName="opacity"
+values="1;.3;1"
+dur="3.5s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="875" cy="94" r="1.4">
+<animate attributeName="opacity"
+values=".2;1;.2"
+dur="2.7s"
+repeatCount="indefinite"/>
+</circle>
+
+<circle cx="1088" cy="66" r="1.2">
+<animate attributeName="opacity"
+values="1;.25;1"
+dur="3.8s"
+repeatCount="indefinite"/>
+</circle>
+
+</g>
+
+<!-- ========= Gentle Vignette ========= -->
+
+<rect
+x="0"
+y="0"
+width="1200"
+height="700"
+fill="#000000"
+opacity=".08"/>
+
+<!-- ========= Overall Scene Breathing ========= -->
+
+<g>
+
+<animate
+attributeName="opacity"
+values=".985;1;.985"
+dur="10s"
+repeatCount="indefinite"/>
+
+</g>
+
+<!-- ====================================== -->
+<!-- END OF SCENE                           -->
+<!-- ====================================== -->
+
 </svg>
