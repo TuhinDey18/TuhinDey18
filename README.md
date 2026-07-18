@@ -60,7 +60,7 @@
 | **[GPS Tracking System](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** | Real-time GPS tracking system with remote location monitoring via SMS | ESP32, Neo-6M GPS, SIM800L |
 | **[AI Diet Planner Telegram Bot](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** | Telegram bot generating personalized diet plans, using REST APIs for dynamic responses | Python, REST APIs, Telegram Bot API |
 
-*(Update the `REPLACE_WITH_REPO_NAME` links once each of your own projects has its own repo.)*
+
 
 ---
 
