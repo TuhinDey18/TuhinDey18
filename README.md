@@ -1,8 +1,12 @@
+<p align="center">
+  <img src="./banner.svg" width="100%" alt="banner" />
+</p>
+
 <h1 align="center">Hi 👋, I'm Tuhin Dey</h1>
 <h3 align="center">CS Undergrad @ IEM Kolkata | SDE Aspirant | Python, ML & Systems</h3>
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=2E86C1&center=true&vCenter=true&width=600&lines=B.Tech+CST+%40+IEM+Kolkata+(GPA+8.63);Building+with+Python%2C+Java%2C+C;Working+on+ML+%2B+NLP+projects;Learning+DSA+every+day" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=20&pause=1000&color=2E86C1&center=true&vCenter=true&width=600&lines=B.Tech+CST+%40+IEM+Kolkata+(GPA+8.51);Building+with+Python%2C+Java%2C+C;Working+on+ML+%2B+NLP+projects;Learning+DSA+every+day" alt="Typing SVG" />
 </p>
 
 <p align="center">
@@ -13,10 +17,11 @@
 ---
 
 ### 🎓 About Me
-- 🎓 B.Tech in Computer Science and Technology, **Institute of Engineering and Management (IEM), Kolkata** — GPA 8.63
+- 🎓 B.Tech in Computer Science and Technology, **Institute of Engineering and Management (IEM), Kolkata** — GPA 8.51
 - 🏆 Rank 2, First Year B.Tech (CST), IEM
 - 🥇 Winner — Poster Presentation on AI in Synthetic Genomics, IEM (Sept 2024)
 - 🥇 Winner — Biospectrum 2024 Research Presentation, IEM (Sept 2024)
+- 🚀 Top-25 Finalist — **Citadel Hackathon** (30-hour build), for an AI-based distress monitoring system
 - 🔭 Currently working on **multimodal sentiment analysis for low-resource Hindi** (text + audio)
 - 🌱 Currently deepening my **Data Structures & Algorithms** and systems fundamentals
 - 📫 Reach me at **tuhindey256@gmail.com**
@@ -50,20 +55,12 @@
 
 | Project | Description | Tech |
 |---|---|---|
+| **[Project SANJAYA](https://github.com/darshanraj1909-jpg/Project-SANJAYA)** *(Top-25 finalist, Citadel Hackathon — 30hrs)* | AI-based distress monitoring system for hospitals/public spaces — detects body posture/structure, fire, and audio distress cues (hazard, distress, normal) | Python, Computer Vision, Audio Classification |
 | **[Multimodal Sentiment Analysis (Hindi)](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** *(ongoing)* | Multimodal system analyzing sentiment from text + audio on a low-resource Hindi dataset for emotion classification | Python, ML, NLP |
 | **[GPS Tracking System](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** | Real-time GPS tracking system with remote location monitoring via SMS | ESP32, Neo-6M GPS, SIM800L |
 | **[AI Diet Planner Telegram Bot](https://github.com/TuhinDey18/REPLACE_WITH_REPO_NAME)** | Telegram bot generating personalized diet plans, using REST APIs for dynamic responses | Python, REST APIs, Telegram Bot API |
 
-*(Update the links above once each project has its own repo — see note below.)*
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=TuhinDey18&show_icons=true&theme=default&count_private=true" width="48%" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=TuhinDey18&theme=default" width="48%" />
-</p>
+*(Update the `REPLACE_WITH_REPO_NAME` links once each of your own projects has its own repo.)*
 
 ---
 
